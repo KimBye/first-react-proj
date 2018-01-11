@@ -34,7 +34,7 @@ gulp.task('compile:scss', function(){
     .pipe(gulp.dest(SCSS_DEST));
 });*/
 
-// detect changes in SCSS
+// detect changes make in SCSS
 gulp.task('sass:watch', function () {
   gulp.watch(SCSS_SRC, ['compile:scss']);
 });

@@ -4,15 +4,15 @@ import React, { Component } from 'react';
   // npm i --dev---save react-router-dom
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
+  //Link
 } from 'react-router-dom';
 
 // components
 import Header from './components/headerComponents/header';
 import Footer from './components/footerComponents/footer';
 import HomePage from './components/pages/homePage';
-import Products from './components/pages/products';
+import Drugs from './components/pages/drugs';
 
 // Include
 import './Assets/css/default.min.css';
@@ -25,7 +25,7 @@ class App extends Component {
 
           <Header />
             <Route exact path='/' component={HomePage} />
-            <Route exact path='/products' component={Products} />
+            <Route exact path='/my-drug-world' component={Drugs} />
           <Footer />
 
         </div>

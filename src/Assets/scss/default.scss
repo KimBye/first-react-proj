@@ -1,17 +1,18 @@
 
 @import "_config.scss";
 
+/* General*/
+body {
+    min-width: 673px;
+}
+
 header {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 50px;
-  background-color: $black;
-  color: $white;
+  @include boundaries(true);
 
  .logo {
     position: absolute;
     top:50%; left: 15px;
+    height:100%;
     @include translateY(-50%);
   }
 
@@ -23,25 +24,37 @@ header {
   }
 
   nav {
-    position: absolute;
+    /*position: absolute;
     top: 50%; right: 50%;
-    @include translateY(-50%);
+    @include translateY(-50%);*/
 
     ul li {
       list-style-type: none;
       display: inline-block;
-      margin-right: 18px;
 
       &.last {
         margin: 0;
       }
 
       a {
-        font-size: 19px;
+        font-size: 3em;
         line-height: normal;
-        color: $white;
+        color: $fireRed;
+        font-weight: bold;
+        margin: 0 20px 0 20px;
       }
     }
   }
 
+}
+
+footer {
+  @include boundaries(false);
+  .sign-name {
+    font-size: 1.2em;
+    color: $black;
+    a {
+      color: $red !important;
+    }
+  }
 }
