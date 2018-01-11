@@ -8,9 +8,9 @@ class Header extends Component {
   render() {
     return (
       <header>
-
-        <div className="logo">LOGO</div>
-
+          <div className="logo">
+            <img src={require('../../Assets/img/medicine.svg')} width="20" height="200"  />
+          </div>
         <nav>
           <ul>
             <li>

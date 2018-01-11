@@ -3,9 +3,9 @@
   "name": "Where you get the information on what is going in your body",
   "icons": [
     {
-      "src": "pill.ico",
+      "src": "pill.svg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "mage/svg+xml"
     }
   ],
   "start_url": "./index.html",
